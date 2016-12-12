@@ -1,0 +1,294 @@
+// Varables
+$primary-color: #C6CC33;
+$secondary-color: #F7F3B2;
+$nav-back-grd-color: #105F73;
+$back-grd-color: #033036;
+$btn-color: #ED5500;
+$margin-1: 60px;
+$padding-1: 15px;
+$width-1: 240px;
+$height-1: 50px;
+$border: none;
+$border-radius: 0;
+
+
+// mixins
+@mixin btn($padding, $color-one, $color-two) {
+    padding: $padding;
+    text-align: center;
+    border: 4px solid $color-one;
+    color: $color-one;
+    &:hover {
+        background: $color-one;
+        color: $color-two;
+        text-decoration: none;
+    }
+}
+
+@mixin explore-btn($border-left, $border-right) {
+    padding: 5px $padding-1;
+    text-align: center;
+    border: 4px solid $btn-color;
+    border-left: $border-left solid $btn-color;
+    border-right: $border-right solid $btn-color;
+    color: $btn-color;
+    &:hover {
+        background: $btn-color;
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+@mixin brand {
+    margin-right: 30px;
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+@mixin drop-down {
+    margin-top: 10px;
+    width: $width-1;
+    height: $height-1;
+    background: $btn-color;
+    color: $secondary-color;
+    border: $border;
+    border-radius: $border-radius;
+    &:hover {
+        background: lighten($btn-color, 20%);
+        color: $back-grd-color
+    }
+    &:focus {
+        background: $btn-color !important;
+        color: $secondary-color !important;
+    }
+}
+
+//style
+#nav-bar {
+    background: $nav-back-grd-color;
+    border-radius: 0px;
+}
+
+#nav-brand {
+    @include brand;
+}
+
+#nav-links li a {
+    margin-right: 10px;
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.border {
+    border: 1px solid white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1080px;
+    width: 100%;
+}
+
+p {
+    color: #f1f1f1;
+}
+
+h2 {
+    margin: 20px -10px 5px;
+    color: $back-grd-color;
+}
+
+h3 {
+    margin-top: 30px;
+    color: $btn-color;
+
+}
+
+label {
+    font-weight: bold;
+    color: $back-grd-color;
+}
+
+.form-card {
+    margin: 20px auto;
+	padding: 20px 15px;
+    height: auto;
+	background: $primary-color;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #121212;
+}
+
+.input {
+    width: 700px;
+}
+
+.my-btn {
+    @include btn($padding-1, $btn-color, $secondary-color);
+    margin-top: 15px;
+    width: 240px;
+    background: none;
+    border-radius: $border-radius;
+}
+
+.sub-btns {
+    margin: $margin-1 10px;
+}
+
+.sec-btn-link {
+    @include btn($padding-1, $back-grd-color, $secondary-color);
+}
+
+.drop-down {
+    margin-top: 10px;
+    width: auto;
+}
+
+.my-drp-down {
+    @include drop-down;
+    margin: 0 0 20px -10px;
+
+}
+
+.main-drop-down {
+    @include drop-down;
+    float: left;
+}
+
+#home-middle {
+    margin: $margin-1 auto;
+}
+
+#feat-trail {
+    width: auto;
+    height: 450px;
+    float: left;
+}
+
+.find-share-img img {
+    width: 510px;
+    height: 365px;
+}
+
+.trail-section {
+    height: auto;
+    background: $back-grd-color;
+}
+
+.about-container {
+    padding: 10px 0;
+}
+
+.about-us {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 360px;
+    float: left;
+    color: $primary-color;
+}
+
+.main-btn-link {
+    @include btn($padding-1, $btn-color, $secondary-color);
+    margin-left: 30px;
+}
+
+.about-us-img {
+    width: 645px;
+    height: 450px;
+    display: block;
+    float: right;
+}
+
+#trail-area, #region-area {
+    padding: 0;
+    margin-left: 35px;
+}
+
+#region-submit {
+    margin-left: 10px;
+}
+
+#region-from-group {
+    margin-top: -30px;
+}
+
+#trail-search, #submit-btn {
+    margin-left: -10px;
+}
+
+#trail-search {
+    width: 290px;
+}
+
+.submit-btn {
+    width: 150px;
+    padding: 5px;
+}
+
+.trail {
+    margin: 10px 20px 10px 0;
+    padding: 10px;
+    width: 210px;
+    height: 300px;
+    float: left;
+    background: $back-grd-color;
+    border-radius: 3px;
+    position: relative;
+}
+
+.explore-btn {
+    @include explore-btn(4px, 2px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.delete-btn {
+    @include explore-btn(2px, 4px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.sort-drop-down {
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+}
+
+.page-intro {
+    margin: 100px auto $margin-1;
+    & h1 {
+        color: $back-grd-color;
+    }
+    & p {
+        color: $btn-color;
+    }
+}
+
+.region-h3 {
+    margin-top: 0;
+}
+
+#region-card {
+    height: 150px;
+}
+
+#home {
+    @include btn($padding-1, $btn-color, $secondary-color);
+    margin: 0 auto;
+}
+
+footer {
+    height: 70px;
+    background: $nav-back-grd-color;
+}
+
+#footer-brand {
+    @include brand;
+    margin-top: 10px;
+}

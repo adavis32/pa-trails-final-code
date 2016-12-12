@@ -1,0 +1,257 @@
+#nav-bar {
+  background: #105F73;
+  border-radius: 0px; }
+
+#nav-brand {
+  margin-right: 30px;
+  color: #C6CC33; }
+  #nav-brand:hover {
+    color: #F7F3B2; }
+
+#nav-links li a {
+  margin-right: 10px;
+  color: #C6CC33; }
+  #nav-links li a:hover {
+    color: #F7F3B2; }
+
+.border {
+  border: 1px solid white; }
+
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1080px;
+  width: 100%; }
+
+p {
+  color: #f1f1f1; }
+
+h2 {
+  margin: 20px -10px 5px;
+  color: #033036; }
+
+h3 {
+  margin-top: 30px;
+  color: #ED5500; }
+
+label {
+  font-weight: bold;
+  color: #033036; }
+
+.form-card {
+  margin: 20px auto;
+  padding: 20px 15px;
+  background: #C6CC33;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #121212; }
+
+.input {
+  width: 700px; }
+
+.my-btn {
+  padding: 15px;
+  text-align: center;
+  border: 4px solid #ED5500;
+  color: #ED5500;
+  margin-top: 15px;
+  width: 240px;
+  background: none;
+  border-radius: 0; }
+  .my-btn:hover {
+    background: #ED5500;
+    color: #F7F3B2;
+    text-decoration: none; }
+
+.sub-btns {
+  margin: 60px 10px; }
+
+.sec-btn-link {
+  padding: 15px;
+  text-align: center;
+  border: 4px solid #033036;
+  color: #033036; }
+  .sec-btn-link:hover {
+    background: #033036;
+    color: #F7F3B2;
+    text-decoration: none; }
+
+.drop-down {
+  margin-top: 10px;
+  width: auto; }
+
+.my-drp-down {
+  margin-top: 10px;
+  width: 240px;
+  height: 50px;
+  background: #ED5500;
+  color: #F7F3B2;
+  border: none;
+  border-radius: 0;
+  margin: 0 0 20px -10px; }
+  .my-drp-down:hover {
+    background: #ff9154;
+    color: #033036; }
+  .my-drp-down:focus {
+    background: #ED5500 !important;
+    color: #F7F3B2 !important; }
+
+.main-drop-down {
+  margin-top: 10px;
+  width: 240px;
+  height: 50px;
+  background: #ED5500;
+  color: #F7F3B2;
+  border: none;
+  border-radius: 0;
+  float: left; }
+  .main-drop-down:hover {
+    background: #ff9154;
+    color: #033036; }
+  .main-drop-down:focus {
+    background: #ED5500 !important;
+    color: #F7F3B2 !important; }
+
+#home-middle {
+  margin: 60px auto; }
+
+#feat-trail {
+  width: auto;
+  height: 450px;
+  float: left; }
+
+.find-share-img img {
+  width: 510px;
+  height: 365px; }
+
+.about, .trail-section {
+  background: #033036; }
+
+.about-container {
+  padding: 10px 0; }
+
+.about-us {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 360px;
+  float: left;
+  color: #C6CC33; }
+
+.main-btn-link {
+  padding: 15px;
+  text-align: center;
+  border: 4px solid #ED5500;
+  color: #ED5500;
+  margin-left: 30px; }
+  .main-btn-link:hover {
+    background: #ED5500;
+    color: #F7F3B2;
+    text-decoration: none; }
+
+.about-us-img {
+  width: 645px;
+  height: 450px;
+  display: block;
+  float: right; }
+
+#trail-area, #region-area {
+  padding: 0;
+  margin-left: 35px;
+  height: auto; }
+
+#region-submit {
+  margin-left: 10px; }
+
+#region-from-group {
+  margin-top: -30px; }
+
+#trail-search, #submit-btn {
+  margin-left: -10px; }
+
+#trail-search {
+  width: 290px; }
+
+.submit-btn {
+  width: 150px;
+  padding: 5px; }
+
+.trail {
+  margin: 10px 20px 10px 0;
+  padding: 10px;
+  width: 210px;
+  height: 300px;
+  float: left;
+  background: #033036;
+  border-radius: 3px;
+  position: relative; }
+
+.explore-btn {
+  padding: 5px 15px;
+  text-align: center;
+  border: 4px solid #ED5500;
+  border-left: 4px solid #ED5500;
+  border-right: 2px solid #ED5500;
+  color: #ED5500;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+  .explore-btn:hover {
+    background: #ED5500;
+    color: #F7F3B2;
+    text-decoration: none; }
+
+.delete-btn {
+  padding: 5px 15px;
+  text-align: center;
+  border: 4px solid #ED5500;
+  border-left: 2px solid #ED5500;
+  border-right: 4px solid #ED5500;
+  color: #ED5500;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+  .delete-btn:hover {
+    background: #ED5500;
+    color: #F7F3B2;
+    text-decoration: none; }
+
+.sort-drop-down {
+  margin-top: 15px;
+  width: 120px;
+  height: 40px; }
+
+.page-intro {
+  margin: 100px auto 60px; }
+  .page-intro h1 {
+    color: #033036; }
+  .page-intro p {
+    color: #ED5500; }
+
+.region-h3 {
+  margin-top: 0; }
+
+#region-card {
+  height: 150px; }
+
+#home {
+  padding: 15px;
+  text-align: center;
+  border: 4px solid #ED5500;
+  color: #ED5500;
+  margin: 0 auto; }
+  #home:hover {
+    background: #ED5500;
+    color: #F7F3B2;
+    text-decoration: none; }
+
+footer {
+  height: 70px;
+  background: #105F73; }
+
+#footer-brand {
+  margin-right: 30px;
+  color: #C6CC33;
+  margin-top: 10px; }
+  #footer-brand:hover {
+    color: #F7F3B2; }
+
+/*# sourceMappingURL=main.css.map */
